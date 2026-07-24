@@ -46,7 +46,7 @@ module.exports = {
   sessionSecret: optionalEnv('SESSION_SECRET', 'change_this_secret'),
 
   // Linkvertise (optional – leave blank to disable)
-  LINKVERTISE_PUBLISHER_ID: optionalEnv('LINKVERTISE_PUBLISHER_ID', ''),
+  LINKVERTISE_URL: optionalEnv('LINKVERTISE_URL', ''),
   LINKVERTISE_ANTI_BYPASS_TOKEN: optionalEnv('LINKVERTISE_ANTI_BYPASS_TOKEN', ''),
 
   // Embed colours
