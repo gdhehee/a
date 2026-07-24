@@ -1,0 +1,48 @@
+services:
+  - type: web
+    name: nokiatis-bot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: DISCORD_CLIENT_ID
+        sync: false
+      - key: DISCORD_GUILD_ID
+        sync: false
+      - key: GLOBAL_DEPLOY
+        value: "false"
+      - key: OWNER_ID
+        sync: false
+      - key: BOT_STATUS
+        value: "Hacking minecraft accounts"
+      - key: GEN_CHANNEL_ID
+        sync: false
+      - key: PREMIUM_CHANNEL_ID
+        sync: false
+      - key: GEN_COOLDOWN
+        value: "1800"
+      - key: PREMIUM_COOLDOWN
+        value: "900"
+      - key: FREE_LIMIT
+        value: "5"
+      - key: PREMIUM_LIMIT
+        value: "5"
+      - key: BANNER_URL
+        value: "https://media.discordapp.net/attachments/960440723369517106/996423763522506782/rainbow-border.gif"
+      - key: EMBED_FOOTER
+        value: "Made By Nokiatis"
+      - key: PORT
+        value: "10000"
+      - key: DASHBOARD_USERNAME
+        sync: false
+      - key: DASHBOARD_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: LINKVERTISE_PUBLISHER_ID
+        value: ""
+      - key: LINKVERTISE_ANTI_BYPASS_TOKEN
+        value: ""
